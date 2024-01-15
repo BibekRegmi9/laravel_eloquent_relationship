@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('experiences', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->unsignedInteger('user_id');
             $table->unsignedInteger('points');
+            $table->timestamps();
         });
     }
 
