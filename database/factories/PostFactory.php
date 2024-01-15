@@ -18,6 +18,11 @@ class PostFactory extends Factory
     {
         return [
             //
+            'user_id' => function(){
+                return factory(App\Models\User::class)->create()->id;
+            },
+            'title' => $faker -> sentence,
+            'body' => $faker -> paragraph
         ];
     }
 }

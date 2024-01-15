@@ -55,4 +55,12 @@ class User extends Authenticatable
     public function posts(){
         return $this->hasMany(Post::class);
     }
+
+    public function jobs(){
+        return $this->hasMany(Job::class);
+    }
+
+    public function tasks(){
+        return $this->hasMany(Task::class);
+    }
 }
