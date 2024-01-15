@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('website_url');
             $table->string('github_url');
             $table->string('twitter_url');
-
             $table->timestamps();
         });
     }
